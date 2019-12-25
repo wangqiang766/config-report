@@ -1,0 +1,37 @@
+server:
+  port: 1300
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://47.91.250.171:3306/test?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=CTT&allowMultiQueries=true
+      username: root
+      password: 130173
+  redis:
+    database: 0
+    host: 47.91.250.171
+    port: 6379
+    password: 130173
+    jedis:
+      pool:
+        #最大连接数
+        max-active: 8
+        #最大阻塞等待时间(负数表示没限制)
+        max-wait: -1
+        #最大空闲
+        max-idle: 8
+        #最小空闲
+        min-idle: 0
+        #连接超时时间
+        timeout: 10000
+
+  application:
+    name: user-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka3000.com:3000/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: user-a
