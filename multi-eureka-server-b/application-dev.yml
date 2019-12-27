@@ -11,4 +11,4 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http;//eureka3000.com:3000/eureka
+      defaultZone: http://eureka3000.com:3000/eureka
