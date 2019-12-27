@@ -8,7 +8,7 @@ eureka:
     prefer-ip-address: false
     hostname: eureka3001.com
   client:
-    fetch-registry: true
-    register-with-eureka: true
+    fetch-registry: false
+    register-with-eureka: false
     serviceUrl:
       defaultZone: http;//eureka3000.com:3000/eureka/
