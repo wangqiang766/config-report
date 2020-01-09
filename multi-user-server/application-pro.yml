@@ -35,3 +35,5 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: user-a
+#test spring cloud 动态读取
+test.url: xxx
