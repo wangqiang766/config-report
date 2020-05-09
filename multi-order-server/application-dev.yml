@@ -27,7 +27,7 @@ spring:
         timeout: 10000
 
   application:
-    name: order-server
+    name: multi-order-server
 eureka:
   client:
     serviceUrl:

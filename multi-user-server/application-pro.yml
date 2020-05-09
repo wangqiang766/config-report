@@ -27,7 +27,7 @@ spring:
         timeout: 10000
 
   application:
-    name: user-server
+    name: multi-user-server
 eureka:
   client:
     serviceUrl:
