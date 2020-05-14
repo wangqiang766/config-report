@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: multi-user-server
+  cloud:
+    config:
+      profile: pro
+      uri: http://47.91.250.171:1300
+      enabled: true
